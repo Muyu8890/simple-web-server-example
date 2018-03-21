@@ -14,23 +14,26 @@ public class User extends BaseEntity<User> {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public User setUserId(String userId) {
         this.userId = userId;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public User setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public User setCompany(String company) {
         this.company = company;
+        return this;
     }
 }
