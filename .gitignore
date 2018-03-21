@@ -1,0 +1,9 @@
+/.mymetadata
+/.project
+/.settings
+/target
+/.classpath
+/src/main/webapp/META-INF
+/.externalToolBuilders
+/.idea
+/*.iml
