@@ -58,8 +58,7 @@
 	@Mapper
 	public interface UserMapper extends BaseMapper<User> {
 	}
-#### 7.创建Service类，继承BaseService<User>，需要@Service注解，泛型不能少。
-注入UserMapper变量为mapper，或者实现getMapper方法，返回类型为UserMapper
+#### 7.创建Service类，继承BaseService<User>，需要@Service注解，泛型不能少。注入UserMapper变量为mapper，或者实现getMapper方法，返回类型为UserMapper
 	package com.jeecode.user;
 	import com.github.likeabook.webserver.service.BaseService;
 	import org.springframework.stereotype.Service;
@@ -84,8 +83,7 @@
 			return userService.find(paramUser);
 		}
 	}
-#### 9.创建启动类
-@SpringBootApplication为spring-boot注解，@ImportSimpleWebServerBean为simple-web-server注解
+#### 9.创建启动类，@SpringBootApplication为spring-boot注解，@ImportSimpleWebServerBean为simple-web-server注解
 	package com.jeecode;
 	import com.github.likeabook.webserver.ImportSimpleWebServerBean;
 	import org.springframework.boot.SpringApplication;
