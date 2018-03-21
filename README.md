@@ -107,6 +107,21 @@
 	spring.datasource.username=root
 	spring.datasource.password=123456
 	
-#### 10.运行MainApplication，浏览器访问 http://localhost:8080/user/get?userId=userId1
-
+#### 10.运行MainApplication，浏览器访问 http://localhost:8080/user/get?userId=userId1 结果如下
+    {
+        "errorCode": 0,
+        "message": "操作成功",
+        "result": {
+            "deleteFlag": false,
+            "creatorId": null,
+            "creatorName": null,
+            "createTime": 1521614534000,
+            "modifierId": null,
+            "modifierName": null,
+            "modifyTime": 1521614534000,
+            "userId": "userId1",
+            "name": "张三",
+            "company": "阿里巴巴"
+        }
+    }
 
