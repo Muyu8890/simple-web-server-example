@@ -59,6 +59,7 @@ public class MoreExampleController {
         userIdList8.add("userId1");
         userIdList8.add("userId2");
         query8.addIn("userId", userIdList8);
+        query8.addNotIn("userId", "userId1");
         List<User> userList8 = userService.findList(new User(), query8);
 
         // 查询分页
@@ -71,5 +72,12 @@ public class MoreExampleController {
         // 还有 save saveBatch update updateNotNull delete
 
         // 通过上面的示例可以看到，灵活实现了我们想要的功能而不用在userService添加任何方法
+
+
+
+        Page<User> userList10 = userService.findPage(new User().setCompany("阿里巴巴"), new Query().addIn("userId", "userId1").setPageNo(1).setPageSize(20));
+        List<User> userList11 = userService.findList(new User().setCompany("阿里巴巴"), new Query().addIn("userId").setPageNo(1).setPageSize(20));
+
+        System.out.println();
     }
 }

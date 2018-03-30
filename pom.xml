@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>com.github.likeabook</groupId>
 			<artifactId>simple-web-server</artifactId>
-			<version>0.4</version>
+			<version>0.5</version>
 		</dependency>
 		<!-- 热部署，修改文件后编译文件，spring-boot会自动重新加载改变的文件 -->
 		<dependency>
